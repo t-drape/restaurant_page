@@ -1,0 +1,147 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* CSS RESET BY JOSH COMEAU
+url: https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+header {
+  background-color: rgba(0,0,0, 0.5);
+  color: white;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+}
+
+footer {
+  flex-grow: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: rgba(0,0,0, 0.5);
+  color: white;
+}
+
+#content {
+  flex-grow: 2;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: rgba(0,0,0, 0.25);
+  color: white;
+}
+
+.home {
+
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+
+.card {
+  position: relative;
+  border: 5px solid #e090b9;
+}
+
+.heading {
+  z-index: 2;
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  transform: translateY(-60%);
+  color: white;
+}
+
+p, li {
+  font-size: 32px;
+}
+
+.mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
