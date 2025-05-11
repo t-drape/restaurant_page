@@ -56,8 +56,47 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS RESET BY JOSH COMEAU
 url: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#content {
+  height: 100%;
+  background-color: rgba(0,0,0, 0.8);
+}
+
+.home {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.menu {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.about {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
 .card {
-  background-color: rebeccapurple;
+  background-color: beige;
 }
 
 header, footer {
@@ -65,7 +104,15 @@ header, footer {
 }
 
 footer {
-  
+  /* position: fixed; */
+  width: 100%;
+  /* bottom: 0;
+  left: 0; */
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav {

@@ -27,6 +27,8 @@ const loadAboutPage = () => {
   container.appendChild(getAboutPage())
 }
 
+loadHomePage();
+
 // Find the div to add child elements onto
 
 // Create button functionality to load correct pages on click
