@@ -56,92 +56,29 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS RESET BY JOSH COMEAU
 url: https://www.joshwcomeau.com/css/custom-css-reset/ */
 
-body {
-  width: 100%;
-  height: 100vh;
-  background-image: url("./background.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
+.card {
+  background-color: rebeccapurple;
 }
 
-header {
-  background-color: rgba(0,0,0, 0.5);
-  color: white;
+header, footer {
+  background-color: rgba(0,0,0,0.5);
+}
+
+footer {
+  
 }
 
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 button {
   width: 100px;
-  height: 50px;
-}
-
-footer {
-  flex-grow: 0;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-right: 50px;
-  padding-left: 50px;
-  background-color: rgba(0,0,0, 0.5);
-  color: white;
-}
-
-#content {
-  flex-grow: 2;
-  padding-left: 50px;
-  padding-right: 50px;
-  background-color: rgba(0,0,0, 0.25);
-  color: white;
-}
-
-.home {
-
-  height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 30px;
-  margin-top: 30px;
-  padding-bottom: 50px;
-}
-
-
-.card {
-  position: relative;
-  border: 5px solid #e090b9;
-}
-
-.heading {
-  z-index: 2;
-  font-size: 48px;
-  position: absolute;
-  top: 0;
-  left: 40%;
-  transform: translateY(-60%);
-  color: white;
-}
-
-p, li {
-  font-size: 32px;
-}
-
-.mission {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-ul {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  border: none;
+  border-radius: 50px;
 }
