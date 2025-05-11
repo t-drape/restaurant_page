@@ -65,7 +65,7 @@ body {
 
 #content {
   height: 100%;
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0,0,0, 0.3);
 }
 
 .home {
@@ -73,8 +73,39 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  padding: 10px;
+  row-gap: 25px;
+  padding: 25px;
+}
+
+.home > .card {
+  position: relative;
+  box-shadow: 0px 5px 5px 2.5px rgba(0,0,0, 0.75);
+  display: flex;
+  align-items: center;
+}
+
+.home > .card > h1 {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  transform: translateY(-50%);
+  color: black;
+}
+
+.home > .card > p {
+  text-align: center;
+  font-size: 24px;
+  text-wrap: balance;
+}
+
+.home > .card > ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 24px;
+  font-weight: bold;
+  list-style-type: none;
 }
 
 .menu {
@@ -86,17 +117,63 @@ body {
   padding: 10px;
 }
 
+.menu > .card > h1 {
+  /* margin-top: 15px; */
+  text-align: center;
+}
+
+.menu > .items {
+  /* margin-top: 15px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 0px 3px 5px 2.5px rgba(0,0,0, 0.75);
+  /* /* font-weight: bold; */
+  /* list-style-type: none; */
+  /* padding-bottom: 15px; */
+}
+
 .about {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.25fr 1fr;
   grid-template-rows: 1fr;
-  gap: 10px;
-  padding: 10px;
+}
+
+.about > .card {
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.final-message, .about > .card > h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.story {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.photo-bg {
+  background-image: url("./photo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card {
-  background-color: beige;
+  background-color: white;
+  /* box-shadow: 5px 5px 5px  black; */
 }
 
 header, footer {
